@@ -7,5 +7,5 @@ WORKDIR /var/www/html
 RUN unzip little-fashion.zip
 RUN cp -rf 2127_little_fashion/* . &&\
     rm -rf 2127_little_fashion
-EXPOSE 8097
+EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
